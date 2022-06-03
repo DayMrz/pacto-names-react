@@ -17,3 +17,23 @@ body {
   font-size: 10rem;
   letter-spacing: -.27em;
 }
+
+.letters span:nth-child(5n + 1) {
+  color: var(--yellow);
+}
+
+.letters span:nth-child(5n + 2) {
+  color: var(--blue);
+}
+
+.letters span:nth-child(5n + 3) {
+  color: var(--red);
+}
+
+.letters span:nth-child(5n + 4) {
+  color: var(--green);
+}
+
+.letters span:nth-child(5n + 5) {
+  color: var(--purple);
+}
