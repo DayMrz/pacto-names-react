@@ -1,20 +1,21 @@
 :root {
   --yellow:hsla(36, 100%, 51%, 0.81);
   --blue: hsl(228, 66%, 33%);
-  --red: hsla(358, 100%, 55%, 0.81);
-  --green: hsl(143, 100%, 33%);
+  --red: hsla(358, 100%, 55%, 0.817);
+  --green: hsla(143, 100%, 33%, 0.872);
   --purple: hsl(308, 56%, 41%);
 }
 
 body {
   margin: 0;
   font-family: 'Gotham Black', sans-serif;
+  font-size: 1.25em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .letters {
-  font-size: 10rem;
+  font-size: 3em;
   letter-spacing: -.256em;
   text-transform: uppercase;
 }
@@ -45,4 +46,10 @@ body {
 
 .small {
   padding: 0 .1em;
+}
+
+@media screen and (min-width: 390px) {
+  .letters {
+    font-size: 7em;
+  }
 }

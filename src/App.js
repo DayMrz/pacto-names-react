@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Logo from './Logo'
 function Letters(props) {
 
   const letters = props.letters.split('')
@@ -21,7 +21,7 @@ function App() {
   const [name, setName] = useState('');
   
   return (
-    <div className="App">
+    <div className='App'>
       <label>
         Name:
         <input
@@ -35,6 +35,7 @@ function App() {
       </label>
 
       <Letters letters={name} />
+      <Logo />
     </div>
   );
 }
