@@ -16,28 +16,33 @@ body {
 .letters {
   font-size: 10rem;
   letter-spacing: -.256em;
+  text-transform: uppercase;
 }
 
-.letters span:nth-child(5n + 1) {
+.letters span:nth-of-type(5n + 1) {
   color: var(--yellow);
   position: relative;
   z-index: 1;
 }
 
-.letters span:nth-child(5n + 2) {
+.letters span:nth-of-type(5n + 2) {
   color: var(--blue);
 }
 
-.letters span:nth-child(5n + 3) {
+.letters span:nth-of-type(5n + 3) {
   color: var(--red);
 }
 
-.letters span:nth-child(5n + 4) {
+.letters span:nth-of-type(5n + 4) {
   color: var(--green);
   position: relative;
   z-index: 1;
 }
 
-.letters span:nth-child(5n + 5) {
+.letters span:nth-of-type(5n + 5) {
   color: var(--purple);
+}
+
+.small {
+  padding: 0 .1em;
 }
