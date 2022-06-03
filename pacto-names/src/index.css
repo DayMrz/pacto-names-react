@@ -1,7 +1,7 @@
 :root {
-  --yellow:hsl(36, 100%, 51%);
+  --yellow:hsla(36, 100%, 51%, 0.81);
   --blue: hsl(228, 66%, 33%);
-  --red: hsl(358, 100%, 55%);
+  --red: hsla(358, 100%, 55%, 0.81);
   --green: hsl(143, 100%, 33%);
   --purple: hsl(308, 56%, 41%);
 }
@@ -15,11 +15,13 @@ body {
 
 .letters {
   font-size: 10rem;
-  letter-spacing: -.27em;
+  letter-spacing: -.256em;
 }
 
 .letters span:nth-child(5n + 1) {
   color: var(--yellow);
+  position: relative;
+  z-index: 1;
 }
 
 .letters span:nth-child(5n + 2) {
@@ -32,6 +34,8 @@ body {
 
 .letters span:nth-child(5n + 4) {
   color: var(--green);
+  position: relative;
+  z-index: 1;
 }
 
 .letters span:nth-child(5n + 5) {
