@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from './Logo'
+import Footer from './components/Footer'
 function Letters(props) {
 
   const letters = props.letters.split('')
@@ -35,7 +35,7 @@ function App() {
       </label>
 
       <Letters letters={name} />
-      <Logo />
+      <Footer />
     </div>
   );
 }

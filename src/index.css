@@ -1,8 +1,8 @@
 :root {
   --yellow:hsla(36, 100%, 51%, 0.81);
   --blue: hsl(228, 66%, 33%);
-  --red: hsla(358, 100%, 55%, 0.817);
-  --green: hsla(143, 100%, 33%, 0.872);
+  --red: hsla(359, 83%, 52%, 0.843);
+  --green: hsla(131, 52%, 43%, 0.943);
   --purple: hsl(308, 56%, 41%);
 }
 
@@ -15,6 +15,9 @@ body {
 }
 
 .letters {
+  border: 2px red solid;
+  display: flex;
+  flex-direction: row;
   font-size: 3em;
   letter-spacing: -.256em;
   text-transform: uppercase;
