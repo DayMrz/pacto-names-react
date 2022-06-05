@@ -6,29 +6,34 @@
   --purple: hsl(308, 56%, 41%);
 }
 
-/* * {
+* {
   border: 1px solid magenta ;
-} */
+}
 
 body {
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Gotham', sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Gotham', sans-serif;
   font-size: 1.2em;
-  margin: 0;
   height: 100vh;
+  margin: 0;
+}
+
+.main {
+  /* padding: 3rem 0; */
+  display: flex;
+  justify-content: center;
+  padding:0 1em;
 }
 
 .letters {
   background-image: url('./images/pacto-80px.png');
   background-repeat: no-repeat;
-  padding:5px;
-  width:150px;
-  height:200px;
-
   font-size: 2.5em;
+  height:200px;
   letter-spacing: -.256em;
   min-height: 50vh;
+  width:150px;
 }
 
 .letters,
@@ -66,14 +71,13 @@ body {
 }
 
 .box {
-  text-align: center;
   padding-bottom: 2em;
-  min-height: 10vh;
+  text-align: center;
 }
 
 .hashtag {
-  letter-spacing: -.1em;
   color: var(--purple);
+  letter-spacing: -.1em;
   margin: 0;
 }
 
