@@ -6,21 +6,26 @@
   --purple: hsl(308, 56%, 41%);
 }
 
+* {
+  border: 1px solid magenta ;
+
+}
+
 body {
-  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-family: 'Gotham Black', sans-serif;
   font-size: 1.25em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  height: 100vh;
 }
 
 .letters {
-  border: 2px red solid;
-  display: flex;
-  flex-direction: row;
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: -.256em;
   text-transform: uppercase;
+  min-height: 65vh;
+  margin: .5em;
 }
 
 .letters span:nth-of-type(5n + 1) {

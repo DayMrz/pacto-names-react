@@ -22,19 +22,23 @@ function App() {
   
   return (
     <div className='App'>
-      <label>
-        Name:
-        <input
-          type='text'
-          placeholder='Name'
-          onChange= {e => 
-            setName(e.target.value)
-          }
-          value={name}
-        />
-      </label>
+      <div className=''>
+        <label className='label'>
+          Name:
+          <input
+            type='text'
+            placeholder='Name'
+            onChange= {e => 
+              setName(e.target.value)
+            }
+            value={name}
+          />
+        </label>
+      </div>
+      <main className='main'>
+        <Letters letters={name} />
+      </main>
 
-      <Letters letters={name} />
       <Footer />
     </div>
   );
