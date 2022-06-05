@@ -8,8 +8,10 @@
 
 .logo {
   height: 2.5em;
+  padding: .3em;
 }
 
-/* .footer-info {
-  
-} */
+.footer-info {
+  font-size: .6em;
+
+}

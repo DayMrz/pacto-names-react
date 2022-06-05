@@ -22,7 +22,7 @@ function App() {
   
   return (
     <div className='App'>
-      <div className=''>
+      <div className='box'>
         <label className='label'>
           Name:
           <input
@@ -38,7 +38,9 @@ function App() {
       <main className='main'>
         <Letters letters={name} />
       </main>
-
+      <div className='box'>
+        <p className='hashtag'>&#35;pactosabroso</p>
+      </div>
       <Footer />
     </div>
   );

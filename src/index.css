@@ -8,14 +8,13 @@
 
 * {
   border: 1px solid magenta ;
-
 }
 
 body {
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Gotham', sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Gotham Black', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.2em;
   margin: 0;
   height: 100vh;
 }
@@ -23,9 +22,13 @@ body {
 .letters {
   font-size: 2.5em;
   letter-spacing: -.256em;
+  min-height: 50vh;
+}
+
+.letters,
+.hashtag {
+  font-family: 'Gotham Black', sans-serif;
   text-transform: uppercase;
-  min-height: 60vh;
-  margin: .5em;
 }
 
 .letters span:nth-of-type(5n + 1) {
@@ -54,6 +57,15 @@ body {
 
 .small {
   padding: 0 .1em;
+}
+
+.box {
+  text-align: center;
+}
+
+.hashtag {
+  letter-spacing: -.1em;
+  color: var(--purple);
 }
 
 @media screen and (min-width: 390px) {

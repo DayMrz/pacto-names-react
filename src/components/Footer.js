@@ -4,11 +4,12 @@ import logo from '../images/pacto-historico.png'
 function Footer() {
   return (
     <footer className='footer'>
-      <div className='img-box'>
+      <div>
         <img src={logo} class='logo' alt='pacto-historico logo' />
       </div>
-      <span className='footer-info'>Developed By DayMrz ✌</span>
-      <span className='footer-info'>https://twitter.com/DayMrz_</span>
+      <span className='footer-info'>Developed By
+        <a href='https://twitter.com/DayMrz'>@DayMrz_</a>✌
+      </span>
     </footer>
   )
 }
