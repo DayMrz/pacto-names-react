@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pacto-names-react/static/css/main.15235424.css",
-    "main.js": "/pacto-names-react/static/js/main.af74db9c.js",
+    "main.css": "/pacto-names-react/static/css/main.81ecaa4b.css",
+    "main.js": "/pacto-names-react/static/js/main.fde71c57.js",
     "static/js/787.50ad232b.chunk.js": "/pacto-names-react/static/js/787.50ad232b.chunk.js",
     "index.html": "/pacto-names-react/index.html",
-    "main.15235424.css.map": "/pacto-names-react/static/css/main.15235424.css.map",
-    "main.af74db9c.js.map": "/pacto-names-react/static/js/main.af74db9c.js.map",
+    "main.81ecaa4b.css.map": "/pacto-names-react/static/css/main.81ecaa4b.css.map",
+    "main.fde71c57.js.map": "/pacto-names-react/static/js/main.fde71c57.js.map",
     "787.50ad232b.chunk.js.map": "/pacto-names-react/static/js/787.50ad232b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15235424.css",
-    "static/js/main.af74db9c.js"
+    "static/css/main.81ecaa4b.css",
+    "static/js/main.fde71c57.js"
   ]
 }
