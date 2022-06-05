@@ -22,7 +22,7 @@ function App() {
   
   return (
     <div className='App'>
-      <div className='box'>
+      <div className='input-box'>
         <label className='label'>
           Name:
           <input
