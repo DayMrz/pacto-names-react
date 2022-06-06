@@ -6,6 +6,23 @@
   --purple: hsl(308, 56%, 41%);
 }
 
+@font-face {
+  font-family: gothamFontBold;
+  src: url('./Gotham-Font/GothamBold.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: gothamFontBlack;
+  src: url('./Gotham-Font/Gotham-Black.otf');
+  font-weight: 900;
+}
+
+@font-face { 
+  font-family: gothamFontLight;
+  src: url('./Gotham-Font/Gotham-Light.otf');
+}
+
 * {
   border: 1px solid magenta ;
 }
@@ -13,32 +30,27 @@
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Gotham', sans-serif;
+  font-family: gothamFontBlack;
   font-size: 1.2em;
   height: 100vh;
   margin: 0;
 }
 
 .main {
-  /* padding: 3rem 0; */
-  display: flex;
-  justify-content: center;
-  padding:0 1em;
+  padding-top: 2em;
 }
 
 .letters {
   background-image: url('./images/pacto-80px.png');
   background-repeat: no-repeat;
-  font-size: 2.5em;
-  height:200px;
+  background-position: left 100px center;
+  font-size: 3em;
   letter-spacing: -.256em;
-  min-height: 50vh;
-  width:150px;
+  text-align: center;
 }
 
 .letters,
 .hashtag {
-  font-family: 'Gotham Black', sans-serif;
   text-transform: uppercase;
 }
 
@@ -76,8 +88,9 @@ body {
 }
 
 .hashtag {
+  font-family: gothamFontBold;
   color: var(--purple);
-  letter-spacing: -.1em;
+  letter-spacing: -.03em;
   margin: 0;
 }
 
