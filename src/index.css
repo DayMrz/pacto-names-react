@@ -9,13 +9,11 @@
 @font-face {
   font-family: gothamFontBold;
   src: url('./Gotham-Font/GothamBold.ttf');
-  font-weight: 900;
 }
 
 @font-face {
   font-family: gothamFontBlack;
   src: url('./Gotham-Font/Gotham-Black.otf');
-  font-weight: 900;
 }
 
 @font-face { 
@@ -23,9 +21,9 @@
   src: url('./Gotham-Font/Gotham-Light.otf');
 }
 
-* {
+/* * {
   border: 1px solid magenta ;
-}
+} */
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -37,13 +35,13 @@ body {
 }
 
 .main {
-  padding-top: 2em;
+  padding-top: 4em;
+  background-image: url('./images/pacto-80px.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
 }
 
 .letters {
-  background-image: url('./images/pacto-80px.png');
-  background-repeat: no-repeat;
-  background-position: left 100px center;
   font-size: 3em;
   letter-spacing: -.256em;
   text-align: center;
