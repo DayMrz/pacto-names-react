@@ -42,7 +42,7 @@ body {
 }
 
 .letters {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -.256em;
   text-align: center;
 }
@@ -92,8 +92,8 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 390px) {
+/* @media screen and (min-width: 390px) {
   .letters {
     font-size: 7em;
   }
-}
+} */
