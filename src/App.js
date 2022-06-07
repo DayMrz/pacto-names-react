@@ -22,6 +22,15 @@ function App() {
   
   return (
     <div className='App'>
+
+      <div className='steps-box'>
+        <ol className='steps'>
+          <li>Escribe tu nombre</li>
+          <li>Toma foto de pantalla</li>
+          <li>Recorta y listo!</li>
+        </ol>
+      </div>
+
       <div className='input-box'>
         <label className='label'>
           Nombre:
@@ -36,12 +45,15 @@ function App() {
           />
         </label>
       </div>
+
       <main className='main'>
         <Letters letters={name} />
       </main>
+
       <div className='box'>
         <p className='hashtag'>&#35;pactosabroso</p>
       </div>
+
       <Footer />
     </div>
   );

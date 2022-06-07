@@ -1,6 +1,7 @@
 :root {
   --yellow:hsla(36, 100%, 51%, 0.81);
   --blue: hsl(228, 66%, 33%);
+  --blue-backgroud: hsla(228, 66%, 33%, 0.282);
   --red: hsla(359, 83%, 52%, 0.843);
   --green: hsla(131, 52%, 43%, 0.943);
   --purple: hsl(308, 56%, 41%);
@@ -31,6 +32,17 @@ body {
   margin: 0;
 }
 
+.steps-box {
+  background-color: var(--blue-backgroud);
+  padding: 1em;
+}
+
+.steps {
+  margin: 0;
+  padding-left: 1.5em;
+  font-family: gothamFontLight;
+}
+
 .input-box {
   background-color: var(--purple-background);
   border-radius: 5px;
@@ -58,6 +70,7 @@ body {
 }
 
 .letters {
+
   font-size: 3.5em;
   letter-spacing: -.256em;
   text-align: center;
