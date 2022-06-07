@@ -31,9 +31,8 @@ body {
   margin: 0;
 }
 
-.App {
-  min-height: 100vh;
-}
+/* .App {
+} */
 
 .steps-box {
   background-color: var(--blue-backgroud);
@@ -70,6 +69,7 @@ body {
   background-position: right 15% center;
   background-repeat: no-repeat;
   padding-top: 4em;
+  margin-right: .6em;
 }
 
 .letters {
