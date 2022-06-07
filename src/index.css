@@ -22,10 +22,6 @@
   src: url('./Gotham-Font/Gotham-Light.otf');
 }
 
-/* * {
-  border: 1px solid magenta ;
-} */
-
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -56,13 +52,13 @@ body {
 
 .main {
   background-image: url('./images/pacto-80px.png');
-  background-position: right 1em center;
+  background-position: right 15% center;
   background-repeat: no-repeat;
   padding-top: 4em;
 }
 
 .letters {
-  font-size: 3em;
+  font-size: 3.5em;
   letter-spacing: -.256em;
   text-align: center;
 }
@@ -114,21 +110,22 @@ body {
 
 @media screen and (min-width: 650px) {
   .letters {
-    font-size: 5em;
+    font-size: 8em;
   }
 
   .main {
-    background-image: url('./images/pacto-150px.png');
-    background-position: right 5em center;
+    background-image: url('./images/pacto-120px.png');
+    padding-top: 5em;
+
   }
 }
 @media screen and (min-width: 1000px) {
   .letters {
-    font-size: 7em;
+    font-size: 9em;
   }
 
   .main {
-    background-image: url('./images/pacto-200px.png');
-    background-position: right 10em center;
+    background-image: url('./images/pacto-150px.png');
+    padding-top: 9em;
   }
 }

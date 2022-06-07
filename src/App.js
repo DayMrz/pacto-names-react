@@ -24,11 +24,11 @@ function App() {
     <div className='App'>
       <div className='input-box'>
         <label className='label'>
-          Name:
+          Nombre:
           <input
             className='input'
             type='text'
-            placeholder='Name'
+            placeholder='Nombre'
             onChange= {e => 
               setName(e.target.value)
             }
