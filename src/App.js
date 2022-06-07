@@ -13,17 +13,16 @@ function Letters(props) {
         let variation
         if(letter === 'i') {
           variation = 'small'
-        }
-        else {
+        } else {
           variation = undefined
         }
 
         if(letter === ' '){
           variation = 'space'
         }
+
         return <Container key={`${index}-${letter}`} className={variation}>{letter}</Container>
-      }
-      )}
+      })}
     </div>
   );
 }
@@ -49,7 +48,7 @@ function App() {
             className='input'
             placeholder='Nombre'
             type='text'
-            maxLength={12}
+            maxLength={13}
             onChange= {e => 
               setName(e.target.value)
             }

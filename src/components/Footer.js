@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className='footer'>
       <div>
-        <img src={logo} class='logo' alt='pacto-historico logo' />
+        <img src={logo} className='logo' alt='pacto-historico logo' />
       </div>
       <span className='footer-info'>Developed By 
         <a className='link-info' href='https://twitter.com/DayMrz_'>@DayMrz_</a>✌
