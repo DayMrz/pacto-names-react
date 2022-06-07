@@ -4,6 +4,7 @@
   --red: hsla(359, 83%, 52%, 0.843);
   --green: hsla(131, 52%, 43%, 0.943);
   --purple: hsl(308, 56%, 41%);
+  --purple-background: hsla(308, 56%, 41%, 0.309);
 }
 
 @font-face {
@@ -34,11 +35,23 @@ body {
   margin: 0;
 }
 
+.input-box {
+  margin: 1.5em;
+  background-color: var(--purple-background);
+  border-radius: 5px;
+  padding: 1em;
+  text-align: center;
+}
+
 .main {
   padding-top: 4em;
   background-image: url('./images/pacto-80px.png');
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right 1em center;
+}
+
+.label {
+  background-color: aliceblue;
 }
 
 .letters {
