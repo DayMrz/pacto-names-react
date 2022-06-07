@@ -7,7 +7,7 @@ function Footer() {
       <div>
         <img src={logo} class='logo' alt='pacto-historico logo' />
       </div>
-      <span className='footer-info'>Developed By
+      <span className='footer-info'>Developed By 
         <a href='https://twitter.com/DayMrz_'>@DayMrz_</a>✌
       </span>
     </footer>
