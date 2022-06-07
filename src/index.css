@@ -36,22 +36,29 @@ body {
 }
 
 .input-box {
-  margin: 1.5em;
   background-color: var(--purple-background);
   border-radius: 5px;
+  margin: 1.5em;
   padding: 1em;
   text-align: center;
 }
 
-.main {
-  padding-top: 4em;
-  background-image: url('./images/pacto-80px.png');
-  background-repeat: no-repeat;
-  background-position: right 1em center;
+.label {
+  color: var(--blue);
 }
 
-.label {
-  background-color: aliceblue;
+.input {
+  border: 1px var(--blue) solid;
+  border-radius: 5px;
+  margin-left: .5em;
+  padding: .5em;
+}
+
+.main {
+  background-image: url('./images/pacto-80px.png');
+  background-position: right 1em center;
+  background-repeat: no-repeat;
+  padding-top: 4em;
 }
 
 .letters {
@@ -99,14 +106,29 @@ body {
 }
 
 .hashtag {
-  font-family: gothamFontBold;
   color: var(--purple);
+  font-family: gothamFontBold;
   letter-spacing: -.03em;
   margin: 0;
 }
 
-/* @media screen and (min-width: 390px) {
+@media screen and (min-width: 650px) {
+  .letters {
+    font-size: 5em;
+  }
+
+  .main {
+    background-image: url('./images/pacto-150px.png');
+    background-position: right 5em center;
+  }
+}
+@media screen and (min-width: 1000px) {
   .letters {
     font-size: 7em;
   }
-} */
+
+  .main {
+    background-image: url('./images/pacto-200px.png');
+    background-position: right 10em center;
+  }
+}

@@ -26,7 +26,7 @@ function App() {
         <label className='label'>
           Name:
           <input
-          className='input'
+            className='input'
             type='text'
             placeholder='Name'
             onChange= {e => 
