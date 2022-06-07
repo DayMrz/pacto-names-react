@@ -9,10 +9,21 @@ function Letters(props) {
       {letters.map((letter, index) => {
         const type = letter === ' ' ? 'div' : 'span'
         const Container = ({children, ...props}) => React.createElement(type, props, children)
-        const variation = letter === 'i' ? 'small' : undefined
 
+        let variation
+        if(letter === 'i') {
+          variation = 'small'
+        }
+        else {
+          variation = undefined
+        }
+
+        if(letter === ' '){
+          variation = 'space'
+        }
         return <Container key={`${index}-${letter}`} className={variation}>{letter}</Container>
-      })}
+      }
+      )}
     </div>
   );
 }
@@ -36,8 +47,9 @@ function App() {
           Nombre:
           <input
             className='input'
-            type='text'
             placeholder='Nombre'
+            type='text'
+            maxLength={12}
             onChange= {e => 
               setName(e.target.value)
             }
