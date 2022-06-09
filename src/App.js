@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Footer from './components/Footer'
-function Letters(props) {
+import html2canvas from 'html2canvas'
 
+function Letters(props) {
   const letters = props.letters.split('')
-  
+
   return (
     <div className='letters'>
       {letters.map((letter, index) => {
         const type = letter === ' ' ? 'div' : 'span'
-        const Container = ({children, ...props}) => React.createElement(type, props, children)
+        const Container = ({ children, ...props }) => React.createElement(type, props, children)
 
         let variation
-        if(letter === 'i') {
+
+        if (letter === 'i') {
           variation = 'small'
-        } else {
-          variation = undefined
         }
 
-        if(letter === ' '){
+        if (letter === ' ') {
           variation = 'space'
         }
 
@@ -27,9 +27,27 @@ function Letters(props) {
   );
 }
 
+async function generateImage(htmlNode) {
+  return html2canvas(htmlNode).then(canvas => {
+    const img = canvas.toDataURL('image/png')
+    console.log({ img })
+    const anchor = document.createElement('a')
+
+    anchor.href = img
+    anchor.download = 'pactosabroso.png'
+    anchor.style.display = 'none'
+
+    document.body.appendChild(anchor)
+
+    anchor.click()
+  })
+}
+
 function App() {
+  const [state, setState] = useState('idle'); // idle | loading
   const [name, setName] = useState('');
-  
+  const imageContainerRef = useRef(null);
+
   return (
     <div className='App'>
 
@@ -49,23 +67,36 @@ function App() {
             placeholder='Nombre'
             type='text'
             maxLength={13}
-            onChange= {e => 
+            disabled={state === 'loading'}
+            onChange={e =>
               setName(e.target.value)
             }
             value={name}
           />
         </label>
+
+        <button
+          disabled={state === 'loading'}
+          onClick={() => {
+            if (imageContainerRef.current) {
+              setState('loading')
+              generateImage(imageContainerRef.current)
+                .finally(() => setState('idle'))
+            }
+          }}>Descargar</button>
       </div>
 
-      <main className='main'>
-        <Letters letters={name} />
-      </main>
+      <div ref={imageContainerRef}>
+        <main className='main'>
+          <Letters letters={name} />
+        </main>
 
-      <div className='box'>
-        <p className='hashtag'>&#35;pactosabroso</p>
+        <div className='box'>
+          <p className='hashtag'>#pactosabroso</p>
+        </div>
+
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 }
