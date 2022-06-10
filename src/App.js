@@ -51,14 +51,6 @@ function App() {
   return (
     <div className='App'>
 
-      {/* <div className='steps-box'>
-        <ol className='steps'>
-          <li>Escribe tu nombre</li>
-          <li>Toma foto de pantalla</li>
-          <li>Recorta y listo!</li>
-        </ol>
-      </div> */}
-
       <div className='input-box'>
         <label className='label' for='name'>Nombre:</label>
         <input
