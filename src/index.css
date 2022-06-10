@@ -4,8 +4,10 @@
   --blue-backgroud: hsla(228, 66%, 33%, 0.282);
   --red: hsla(359, 83%, 52%, 0.843);
   --green: hsla(131, 52%, 43%, 0.943);
+  --green-background: hsla(131, 42%, 42%, 0.355);
   --purple: hsl(308, 56%, 41%);
   --purple-background: hsla(308, 56%, 41%, 0.309);
+  --white: rgba(255, 255, 255, 0.934);
 }
 
 @font-face {
@@ -27,30 +29,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: gothamFontBlack;
-  font-size: 1.2em;
   margin: 0;
-}
-
-/* .App {
-} */
-
-.steps-box {
-  background-color: var(--blue-backgroud);
-  padding: 1em;
-}
-
-.steps {
-  font-family: gothamFontLight;
-  margin: 0;
-  padding-left: 1.5em;
 }
 
 .input-box {
+  align-items: center;
   background-color: var(--purple-background);
-  border-radius: 5px;
-  margin: 1.5em;
+  display: flex;
+  gap: .3em;
+  justify-content: center;
+  margin-bottom: 1em;
   padding: 1em;
-  text-align: center;
 }
 
 .label {
@@ -59,9 +48,18 @@ body {
 
 .input {
   border: 1px var(--blue) solid;
+}
+
+.input, .button {
   border-radius: 5px;
-  margin-left: .5em;
   padding: .5em;
+}
+
+.button {
+  background-color: var(--green);
+  border: 1px var(--green-background) solid;
+  box-shadow: 1px 3px 5px var(--green-background);
+  color: var(--white);
 }
 
 .main {
