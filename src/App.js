@@ -51,31 +51,31 @@ function App() {
   return (
     <div className='App'>
 
-      <div className='steps-box'>
+      {/* <div className='steps-box'>
         <ol className='steps'>
           <li>Escribe tu nombre</li>
           <li>Toma foto de pantalla</li>
           <li>Recorta y listo!</li>
         </ol>
-      </div>
+      </div> */}
 
       <div className='input-box'>
-        <label className='label'>
-          Nombre:
-          <input
-            className='input'
-            placeholder='Nombre'
-            type='text'
-            maxLength={13}
-            disabled={state === 'loading'}
-            onChange={e =>
-              setName(e.target.value)
-            }
-            value={name}
-          />
-        </label>
+        <label className='label' for='name'>Nombre:</label>
+        <input
+          id='name'
+          className='input'
+          placeholder='Nombre'
+          type='text'
+          maxLength={13}
+          disabled={state === 'loading'}
+          onChange={e =>
+            setName(e.target.value)
+          }
+          value={name}
+        />
 
         <button
+          className='button'
           disabled={state === 'loading'}
           onClick={() => {
             if (imageContainerRef.current) {
