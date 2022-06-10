@@ -11,16 +11,19 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: gothamFontBold;
   src: url('./Gotham-Font/GothamBold.ttf');
 }
 
 @font-face {
+  font-display: swap;
   font-family: gothamFontBlack;
   src: url('./Gotham-Font/Gotham-Black.otf');
 }
 
 @font-face { 
+  font-display: swap;
   font-family: gothamFontLight;
   src: url('./Gotham-Font/Gotham-Light.otf');
 }
