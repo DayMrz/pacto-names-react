@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Footer from './components/Footer'
 import html2canvas from 'html2canvas'
+import Logo from './images/pacto-80px.png'
 
 function Letters(props) {
   const letters = props.letters.split('')
@@ -77,9 +78,13 @@ function App() {
             }
           }}>Descargar</button>
       </div>
-
+      
       <div ref={imageContainerRef}>
+
         <main className='main'>
+          <div className='box-logo'>
+            <img className='image-logo' src={Logo} alt='pacto historico paloma logo' />
+          </div>
           <Letters letters={name} />
         </main>
 

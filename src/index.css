@@ -65,12 +65,19 @@ body {
   color: var(--white);
 }
 
-.main {
+/* .main {
   background-image: url('./images/pacto-80px.png');
   background-position: right 15% center;
   background-repeat: no-repeat;
   padding-top: 4em;
   margin-right: .6em;
+} */
+
+.image-logo {
+  position: relative;
+  left: 75%;
+  top: 30px;
+  z-index: -1;
 }
 
 .letters {
