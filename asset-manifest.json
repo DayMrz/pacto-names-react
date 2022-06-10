@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pacto-names-react/static/css/main.4abf71a4.css",
-    "main.js": "/pacto-names-react/static/js/main.e1ba0637.js",
+    "main.js": "/pacto-names-react/static/js/main.f9668e48.js",
     "static/js/787.50ad232b.chunk.js": "/pacto-names-react/static/js/787.50ad232b.chunk.js",
     "static/media/GothamBold.ttf": "/pacto-names-react/static/media/GothamBold.108854bb27dee2dce854.ttf",
     "static/media/Gotham-Black.otf": "/pacto-names-react/static/media/Gotham-Black.c9e42599a779a72eaadc.otf",
@@ -10,11 +10,11 @@
     "static/media/pacto-120px.png": "/pacto-names-react/static/media/pacto-120px.5bb0d1edf76c6be94d5f.png",
     "index.html": "/pacto-names-react/index.html",
     "main.4abf71a4.css.map": "/pacto-names-react/static/css/main.4abf71a4.css.map",
-    "main.e1ba0637.js.map": "/pacto-names-react/static/js/main.e1ba0637.js.map",
+    "main.f9668e48.js.map": "/pacto-names-react/static/js/main.f9668e48.js.map",
     "787.50ad232b.chunk.js.map": "/pacto-names-react/static/js/787.50ad232b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4abf71a4.css",
-    "static/js/main.e1ba0637.js"
+    "static/js/main.f9668e48.js"
   ]
 }
