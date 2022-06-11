@@ -83,7 +83,12 @@ function App() {
 
         <main className='main'>
           <div className='box-logo'>
-            <img className='image-logo' src={Logo} alt='pacto historico paloma logo' />
+            <img 
+              className='image-logo' 
+              src={Logo} 
+              width={80}
+              height={80}
+              alt='pacto historico paloma logo' />
           </div>
           <Letters letters={name} />
         </main>
